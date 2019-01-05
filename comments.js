@@ -21,10 +21,10 @@ function comments(state = [], action) {
             return state.map((comment) => action.id === comment.id ? { ...comment, text: action.text } : comment;
 
         case THUMB_UP_COMMENT:
-            return state.map((comment) => { ...comment, votes: action.fingrtUp };
+            return state.map((comment) => { ...comment, votes: action.fingerUp };
 
         case THUMB_DOWN_COMMENT:
-            return state.map((comment) => { ...comment, votes: action.fingrtDown };
+            return state.map((comment) => { ...comment, votes: action.fingerDown };
 
         default:
             return state;
